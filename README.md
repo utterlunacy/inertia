@@ -2,7 +2,7 @@
 inertia emulates the way trackpads work on the Steam Deck. After you swipe on the trackpad, the cursor will continue moving in the direction of the swipe and slowly decelerate. The exact behavior is configurable.
 
 # how
-inertia listens to your trackpad's events and analyzes the cursor movement to calculate the speed and direction of your cursor movement. It takes into account only the most recent movement (configurable time window) to make sure the direction is accurate and then moves the cursor pixel by pixel in the x and y direction while gradually slowing down. Inertia uses grace periods to block unwanted cursor movement, e.g. after a multitouch gesture. To move the pixel, inertia registers a virtual mouse device. Due to permissions, inertia runs as root.
+inertia listens to your trackpad's events and analyzes the cursor movement to calculate the speed and direction of your cursor. It takes into account only the most recent movement (configurable time window) to make sure the direction is accurate and then moves the cursor pixel by pixel in the x and y direction in increasing intervals. Inertia uses grace periods to block unwanted cursor movement, e.g. after a multitouch gesture. To move the cursor, inertia registers a virtual mouse device. Due to permissions, inertia runs as root.
 
 # features
 - detailed configuration
