@@ -1,0 +1,19 @@
+device_name = "Trackpad Name"
+
+sensitivity = 0.05
+trackpad_to_pixel = 0.25
+release_gain = 1.8
+start_speed_min = 120.0
+start_speed_max = 7000.0
+friction_per_16ms = 0.965
+min_speed = 25.0
+
+sample_window_ms = 50
+pause_gap_ms = 28
+pause_dist_threshold = 0.8
+min_travel = 8.0
+max_sample_staleness_ms = 120
+
+grace_ms = 80
+listener_poll_ms = 2
+inertia_poll_ms = 2

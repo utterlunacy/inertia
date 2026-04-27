@@ -1,0 +1,13 @@
+[Unit]
+Description=Inertia Touchpad Service
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStartPre=/usr/bin/modprobe uinput
+ExecStart=/usr/local/bin/inertia
+Restart=always
+
+[Install]
+WantedBy=default.target
+

@@ -1,0 +1,10 @@
+[package]
+name = "inertia"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+evdev = "0.12"
+uinput = "0.1.3"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
